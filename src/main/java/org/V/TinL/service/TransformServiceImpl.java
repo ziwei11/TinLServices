@@ -148,9 +148,9 @@ public class TransformServiceImpl implements TransformService {
 
 
     private void showExpireTime(String longUrl, String shortUrl) {
-        System.out.println("Expire Time: ");
-        System.out.println(redisService.getExpire(longUrl));
-        System.out.println(redisService.getExpire(shortUrl));
+        //System.out.println("Expire Time: ");
+        System.out.println("longUrl expire time: " + redisService.getExpire(longUrl));
+        System.out.println("shortUrl expire time: " + redisService.getExpire(shortUrl));
     }
 
 
